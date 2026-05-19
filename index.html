@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantorium - Gestiona tu Repertorio Musical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#002b49',
+                        brandOrange: '#ff9015',
+                        brandCyan: '#33b2ce',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-brandDark text-white fixed w-full z-50 top-0 left-0 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-brandCyan">Cantorium</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#features"
+                        class="text-gray-200 hover:text-white px-3 py-2 text-sm font-medium">Características</a>
+                    <a href="#pricing" class="text-gray-200 hover:text-white px-3 py-2 text-sm font-medium">Precio</a>
+                    <a href="#legal"
+                        class="bg-brandOrange text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition">Ver
+                        Políticas</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span
+                        class="bg-blue-100 text-brandDark text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">App
+                        Móvil (Android)</span>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-brandDark tracking-tight mt-4 mb-6">
+                        Música, orden y libertad para tu <span class="text-brandOrange">ministerio</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Bienvenido a Cantorium, la herramienta definitiva para gestionar tu repertorio musical de forma
+                        local, rápida y sin depender de internet. Diseña tu lista de cantos, transporta tonos y genera
+                        PDFs profesionales al instante.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#pricing"
+                            class="bg-brandOrange text-white px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition shadow-lg">Comprar
+                            Licencia</a>
+                        <a href="#features"
+                            class="bg-white text-brandDark border border-brandDark px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition">Saber
+                            más</a>
+                    </div>
+                </div>
+                <!-- Placeholder para Captura de Pantalla Principal -->
+                <div class="flex items-center justify-center lg:justify-end">
+                    <img src="images/hero-mockup.png" alt="Cantorium App Mockup Tema Oscuro"
+                        class="w-full max-w-sm h-auto rounded-2xl object-contain drop-shadow-2xl transform lg:scale-110 transition-transform duration-300 hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-brandDark">¿Cómo funciona Cantorium?</h2>
+                <p class="text-gray-500 mt-2">Todo el control de tus cantos en la palma de tu mano</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition">
+                    <div
+                        class="w-12 h-12 bg-blue-100 text-brandDark rounded-lg flex items-center justify-center text-xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 17a3 3 0 1 0 6 0a3 3 0 0 0-6 0m6 0V4h10v8M9 8h10m0 14v-6m3 3l-3-3l-3 3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark mb-2">Añadir Cantos con Acordes</h3>
+                    <p class="text-gray-600 text-sm">Ingresa título, autor, tonalidad y estilo. Escribir la letra es
+                        fácil: usa el prefijo "T:" para resaltar títulos y "A:" para los acordes.</p>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition">
+                    <div
+                        class="w-12 h-12 bg-blue-100 text-brandDark rounded-lg flex items-center justify-center text-xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 48 48">
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                d="M33 42.5h5.5a4 4 0 0 0 4-4v-4.084m-37 2V38.5a4 4 0 0 0 4 4h7.688m0-37H9.5a4 4 0 0 0-4 4v3.172M30.813 5.5H38.5a4 4 0 0 1 4 4v3.172m.778 2.675L22.832 3.541a1.75 1.75 0 0 0-2.389.64l-15.3 26.508a1.75 1.75 0 0 0 .64 2.39h0l20.445 11.806a1.75 1.75 0 0 0 2.39-.64l15.301-26.508a1.75 1.75 0 0 0-.64-2.39m-9.028 3.831l-13.52-7.919m15.275 13.333l-17.233-9.95m15.249 13.403L16.79 18.094"
+                                stroke-width="1" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark mb-2">Índice y Transposición</h3>
+                    <p class="text-gray-600 text-sm">Visualiza toda tu lista y cambia la tonalidad de cualquier canción
+                        al instante. Personaliza el tamaño de la letra y color de los acordes.</p>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition">
+                    <div
+                        class="w-12 h-12 bg-blue-100 text-brandDark rounded-lg flex items-center justify-center text-xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 48 48">
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                d="m12.078 15.28l-.485-1.786l-1.705.081l-.813 1.948l.813 2.03h1.705l.485-1.948m1.827-.127l-1.559-.05m.174 17.474l-.485-1.785l-1.705.081l-.813 1.948l.813 2.029h1.705l.485-1.948m1.386-.127l-1.115-.05m.192-8.959l-.485-1.786l-1.705.082l-.813 1.948l.813 2.029h1.705l.485-1.948m1.227-.126l-.956-.05m13.323 18.302c-.63.464-2.778 1.977-5.51-.14l-5.69-5.037s-1.772-1.865-1.399-3.917s.56-20.055-.466-25.465c0 0 5.085-3.31 10.474-3.483c5.374.19 10.433 3.483 10.433 3.483c-.277 1.463-.466 3.846-.536 6.563c-10.755-1.052-11.147 4.746-11.147 7.552c0 2.692 1.461 4.437 2.86 5.268c0 0-2.86 1.22-2.86 4.41c0 4.058 2.018 7.034 8.19 7.034c0 0-2.363 2.274-4.349 3.732"
+                                stroke-width="1" />
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                d="M27.113 34.48c1.263 1.061 2.626 1.547 5.688 1.547h1.552a4.577 4.577 0 0 0 4.572-4.582h0a4.577 4.577 0 0 0-4.572-4.582H31.25a4.577 4.577 0 0 1-4.573-4.582h0a4.577 4.577 0 0 1 4.573-4.582h1.55c3.062 0 4.426.486 5.689 1.546"
+                                stroke-width="1" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark mb-2">Diagramas de Acordes</h3>
+                    <p class="text-gray-600 text-sm">¿Dudas con una posición? Selecciona el acorde y el tono para ver
+                        gráficamente cómo posicionar los dedos en la guitarra o en el piano.</p>
+                </div>
+                <!-- Tarjeta 4 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition">
+                    <div
+                        class="w-12 h-12 bg-blue-100 text-brandDark rounded-lg flex items-center justify-center text-xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 14 14">
+                            <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1">
+                                <path
+                                    d="M4.638 13.428a1.497 1.497 0 1 0 0-2.995a1.497 1.497 0 0 0 0 2.995m6.739-1.872a1.497 1.497 0 1 0 0-2.994a1.497 1.497 0 0 0 0 2.994" />
+                                <path
+                                    d="M12.874 10.059v-5.87a.374.374 0 0 0-.472-.359l-2.995.831m3.467 1.28L7.42 7.456M4.762 2.597c.445-.601.719-1.83.719-1.83s.274 1.229.718 1.83c.449.606 1.878 1.136 1.878 1.136s-1.43.53-1.878 1.137c-.444.6-.718 1.829-.718 1.829s-.274-1.228-.719-1.83c-.448-.605-1.877-1.136-1.877-1.136s1.429-.53 1.877-1.136m1.374 9.333V8.892M2.007 6.623v2.268M.873 7.757h2.268" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark mb-2">Importar y Respaldos</h3>
+                    <p class="text-gray-600 text-sm">Mantén tu lista actualizada cargando un Respaldo General o
+                        importando cantos individuales sin perder ninguna de tus versiones existentes.</p>
+                </div>
+                <!-- Tarjeta 5 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition">
+                    <div
+                        class="w-12 h-12 bg-blue-100 text-brandDark rounded-lg flex items-center justify-center text-xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24">
+                            <g fill="none" stroke="#000" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.052 20.25a2.198 2.198 0 1 0 0-4.396a2.198 2.198 0 0 0 0 4.396m-10.5 3a2.198 2.198 0 1 0 0-4.396a2.198 2.198 0 0 0 0 4.396" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12.75 21.052V11.4a2.07 2.07 0 0 1 1.415-1.963l6.362-1.727a2.068 2.068 0 0 1 2.723 1.962v8.38M5.25.75h15m-15 6h6m-6 6h3" />
+                                <path
+                                    d="M1.125 1.5a.375.375 0 1 1 0-.75m0 .75a.375.375 0 1 0 0-.75m0 6a.375.375 0 1 1 0-.75m0 .75a.375.375 0 1 0 0-.75m0 6.75a.375.375 0 0 1 0-.75m0 .75a.375.375 0 0 0 0-.75" />
+                            </g>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark mb-2">Exportar a PDF Profesional</h3>
+                    <p class="text-gray-600 text-sm">Selecciona los temas que vas a usar o toda tu lista y genera un
+                        archivo PDF profesional con índice incluido (requiere conexión para compilar).</p>
+                </div>
+                <!-- Tarjeta 6 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 hover:shadow-md transition">
+                    <div
+                        class="w-12 h-12 bg-blue-100 text-brandDark rounded-lg flex items-center justify-center text-xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 48 48">
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.6 5.5a3.72 3.72 0 0 0-3.7 3.7v22.2a3.72 3.72 0 0 0 3.7 3.7h22.2a3.72 3.72 0 0 0 3.7-3.7V9.2a3.72 3.72 0 0 0-3.7-3.7Zm-3.7 7.4H9.5a4 4 0 0 0-4 4v21.9a3.72 3.72 0 0 0 3.7 3.7h21.9a4 4 0 0 0 4-4v-3.4m-.55-19.95h5.18m-5.18 5.17h3.38m-3.38-5.17v10.34"
+                                stroke-width="1" />
+                            <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.67 25.47V15.13h3.48a3.47 3.47 0 1 1 0 6.94h-3.48m9.44 3.42V15.11h1.76a5.19 5.19 0 0 1 5.19 5.19h0a5.19 5.19 0 0 1-5.19 5.19Z"
+                                stroke-width="1" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-brandDark mb-2">Almacenamiento Local</h3>
+                    <p class="text-gray-600 text-sm">Todo se guarda organizado en tu teléfono (Documentos/Cantorium).
+                        Tus datos te pertenecen por completo y son privados.</p>
+                </div>
+            </div>
+
+            <!-- Fila de Placeholders de Imágenes del Sistema -->
+            <div class="mt-12 flex flex-col items-center justify-center text-center text-gray-500 p-6">
+                <img src="images/screen.png" alt="Cantorium App Mockups: Índice y Diagramas"
+                    class="w-full max-w-4xl rounded-2xl h-auto object-contain drop-shadow-xl transform transition-transform duration-300 hover:scale-105">
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50 border-t border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-brandDark mb-4">Nuestros Productos</h2>
+            <p class="text-gray-600 mb-12">Todo lo que necesitas para tu ministerio. Pagos únicos, sin suscripciones.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
+
+                <div
+                    class="bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden flex flex-col justify-between">
+                    <div class="px-6 py-8">
+                        <span
+                            class="bg-brandOrange text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Recomendado</span>
+                        <h3 class="text-2xl font-bold text-brandDark">Cantorium App + Pack Base</h3>
+                        <p class="mt-4 text-sm text-gray-500">Licencia vitalicia de la aplicación para iOS y Android.
+                        </p>
+                        <p class="mt-6">
+                            <span class="text-4xl font-extrabold tracking-tight text-brandDark">$559</span>
+                            <span class="text-lg font-medium text-gray-500">MXN</span>
+                        </p>
+                        <p class="text-xs text-gray-400 mt-1">(Aproximadamente $29.99 USD)</p>
+                        <button disabled
+                            class="mt-8 w-full bg-brandOrange text-white py-3 px-4 rounded-lg font-medium opacity-85 cursor-not-allowed">
+                            Tienda en Activación
+                        </button>
+                    </div>
+                    <div class="px-6 pt-6 pb-8 bg-gray-50 text-left text-sm flex-grow">
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-brandCyan font-bold mr-2">✓</span> **Incluye
+                                Pack de Bienvenida:** Respaldo inicial con 45 a 60 cantos listos para usar.</li>
+                            <li class="flex items-start"><span class="text-brandCyan font-bold mr-2">✓</span>
+                                Instalación ilimitada y actualizaciones de por vida.</li>
+                            <li class="flex items-start"><span class="text-brandCyan font-bold mr-2">✓</span> Base de
+                                datos 100% offline y privada.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-2xl border border-gray-200 shadow-xl overflow-hidden flex flex-col justify-between">
+                    <div class="px-6 py-8">
+                        <span
+                            class="bg-brandCyan text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Expansiones</span>
+                        <h3 class="text-2xl font-bold text-brandDark">Respaldos de Cantos Extra</h3>
+                        <p class="mt-4 text-sm text-gray-500">Paquetes temáticos de repertorio listo para importar.</p>
+                        <p class="mt-6">
+                            <span class="text-4xl font-extrabold tracking-tight text-brandDark">$99</span>
+                            <span class="text-lg font-medium text-gray-500">MXN <span
+                                    class="text-sm font-normal text-gray-500">c/u</span></span>
+                        </p>
+                        <p class="text-xs text-gray-400 mt-1">(Aproximadamente $4.99 USD por paquete)</p>
+                        <button disabled
+                            class="mt-8 w-full bg-brandDark text-white py-3 px-4 rounded-lg font-medium opacity-85 cursor-not-allowed">
+                            Próximamente
+                        </button>
+                    </div>
+                    <div class="px-6 pt-6 pb-8 bg-gray-50 text-left text-sm flex-grow">
+                        <ul class="space-y-3">
+                            <li class="flex items-start"><span class="text-brandCyan font-bold mr-2">✓</span>
+                                **Volúmenes Temáticos:** Bloques organizados de 45 a 60 cantos nuevos por archivo.</li>
+                            <li class="flex items-start"><span class="text-brandCyan font-bold mr-2">✓</span>
+                                **Importación en 1 segundo:** Se añaden automáticamente a tu lista sin borrar tus cantos
+                                actuales.</li>
+                            <li class="flex items-start"><span class="text-brandCyan font-bold mr-2">✓</span> Letras,
+                                autores y acordes completamente revisados.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Legal Section (REQUISITO EXIGIDO POR ANKITH) -->
+    <section id="legal" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-brandDark text-center mb-12">Políticas Legales / Legal Policies</h2>
+
+            <div class="space-y-12 text-sm text-gray-600 leading-relaxed">
+                <!-- Terms of Service -->
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-bold text-brandDark mb-4">Terms of Service / Términos del Servicio</h3>
+                    <p class="mb-4">Al adquirir o utilizar Cantorium, usted acepta cumplir con los siguientes términos y
+                        condiciones de uso.</p>
+                    <p class="mb-4"><strong>Uso de la Licencia:</strong> Se le otorga una licencia personal, no
+                        exclusiva e intransferible para instalar y utilizar la aplicación Cantorium en sus dispositivos
+                        móviles compatibles para uso personal o ministerial.</p>
+                    <p class="mb-4"><strong>Propiedad Intelectual:</strong> Todo el código, diseño visual, lógica y
+                        marcas relacionadas con Cantorium son propiedad exclusiva del desarrollador. Queda estrictamente
+                        prohibido revender, redistribuir, descompilar o alterar el software sin autorización expresa.
+                    </p>
+                    <p><strong>Limitación de Responsabilidad:</strong> Cantorium funciona de forma local. El usuario es
+                        el único responsable de salvaguardar su información mediante las funciones de Respaldo General
+                        provistas. No nos hacemos responsables por pérdidas de información debido a fallas mecánicas del
+                        dispositivo o limpiezas totales del sistema realizadas por descuido.</p>
+                </div>
+
+                <!-- Privacy Policy -->
+                <div class="border-b border-gray-200 pb-8">
+                    <h3 class="text-xl font-bold text-brandDark mb-4">Privacy Policy / Política de Privacidad</h3>
+                    <p class="mb-4">La privacidad es la base del diseño de nuestra aplicación. Nos aseguramos de que sus
+                        datos sigan siendo suyos.</p>
+                    <p class="mb-4"><strong>Recopilación de Datos:</strong> Cantorium es una aplicación offline. No
+                        recopilamos, transmitimos, almacenamos ni vendemos ningún tipo de datos personales, letras de
+                        cantos, acordes, archivos o configuraciones que ingrese en el sistema. Todo se almacena
+                        localmente en la carpeta interna de su teléfono.</p>
+                    <p class="mb-4"><strong>Servicios de Terceros:</strong> La funcionalidad de "Exportar a PDF" es la
+                        única sección que requiere acceso a internet para el procesamiento del documento técnico, el
+                        cual se realiza de forma efímera sin conservar copias del archivo en servidores externos.</p>
+                </div>
+
+                <!-- Refund Policy -->
+                <div>
+                    <h3 class="text-xl font-bold text-brandDark mb-4">Refund Policy / Política de Reembolso</h3>
+                    <p class="mb-4">Nuestras transacciones comerciales son procesadas de manera segura a través de Lemon
+                        Squeezy en su calidad de Merchant of Record.</p>
+                    <p class="mb-4"><strong>Garantía de Satisfacción:</strong> Ofrecemos un período de reembolso
+                        completo de hasta 14 días a partir de la fecha de compra si la aplicación presenta fallas
+                        técnicas graves comprobables que impidan su ejecución en un dispositivo móvil con sistema
+                        compatible.</p>
+                    <p class="mb-4"><strong>Proceso de Solicitud:</strong> Para solicitar un reembolso, puede gestionar
+                        la petición desde el correo de confirmación de compra emitido por Lemon Squeezy o ponerse en
+                        contacto con nuestro canal de soporte adjuntando evidencia de la incompatibilidad técnica o bug
+                        encontrado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandDark text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <p class="text-sm">&copy; 2026 Cantorium. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-6 text-xs">
+                <a href="#legal" class="hover:text-white transition">Terms of Service</a>
+                <a href="#legal" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#legal" class="hover:text-white transition">Refund Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
